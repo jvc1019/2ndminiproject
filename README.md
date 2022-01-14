@@ -1,6 +1,6 @@
 # CMSC 197 (Introduction to Data Science)
 # SECOND MINI PROJECT
-# Submitted by: JAYVEE B. CASTAÑEDA
+# Submitted by: JAYVEE B. CASTAÃ‘EDA
 # B.S. in Computer Science - IV, UPV
 
 # Problem 1 README.md File
@@ -24,7 +24,7 @@ The data set is about Human Activity Recognition Using Smartphones which can be 
 # Step-By-Step Procedure
 
 1. Assign each of the following data to corresponding variables
-- Features: `features <- features.txt`
+-- Features: `features <- features.txt`
 - Activities: `activity_labels <- activity_labels.txt`
 - Test Subjects: `subject_test <- test/subject_test.txt`
 - Test Set: `X_test <- test/X_test.txt`
