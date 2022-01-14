@@ -51,7 +51,7 @@ dev.off()
 
 # Plot 3
 with(table_data, {
-  plot(Sub_metering_1~date_time, type="l", ylab="Global Active Power (kilowatts)", xlab="")
+  plot(Sub_metering_1~date_time, type="l", ylab="Energy sub metering", xlab="")
   lines(Sub_metering_2~date_time,col='Red')
   lines(Sub_metering_3~date_time,col='Blue')
 })
@@ -64,17 +64,17 @@ dev.off()
 # Plot 4
 par(mfrow=c(2,2), mar=c(4,4,2,1), oma=c(0,0,2,0))
 with(table_data, {
-  plot(Global_active_power~date_time, type="l", ylab="Global Active Power (kilowatts)", xlab="") # Top Left Plot, Similar to Plot 2
+  plot(Global_active_power~date_time, type="l", ylab="Global Active Power", xlab="") # Top Left Plot, Similar to Plot 2
   
-  plot(Voltage~date_time, type="l", ylab="Voltage (volt)", xlab="") # Top Right Plot
+  plot(Voltage~date_time, type="l", ylab="Voltage", xlab="") # Top Right Plot
   
   # Bottom Left Plot, Similar to Plot 3
-  plot(Sub_metering_1~date_time, type="l", ylab="Global Active Power (kilowatts)", xlab="")
+  plot(Sub_metering_1~date_time, type="l", ylab="Energy sub metering", xlab="")
   lines(Sub_metering_2~date_time,col='Red')
   lines(Sub_metering_3~date_time,col='Blue')
   legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, bty="n", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
   
-  plot(Global_reactive_power~date_time, type="l", ylab="Global Rective Power (kilowatts)",xlab="") # Bottom Right Plot
+  plot(Global_reactive_power~date_time, type="l", ylab="Global_reactive_Power",xlab="") # Bottom Right Plot
 })
 
 # Save Plot 4 into a PNG file
