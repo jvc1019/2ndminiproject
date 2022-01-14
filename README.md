@@ -1,9 +1,9 @@
 # CMSC 197 (Introduction to Data Science)
-# SECOND MINI PROJECT
-# Submitted by: JAYVEE B. CASTAÑEDA
-# B.S. in Computer Science - IV, UPV
+## SECOND MINI PROJECT
+### Submitted by: JAYVEE B. CASTAÑEDA
+### B.S. in Computer Science - IV, UPV
 
-# Problem 1 README.md File
+## Problem 1 README.md File
 
 The R script is called `run_analysis.R` is created to perform the following tasks:
 . Merge the training and the test sets to create one data set.
@@ -80,5 +80,3 @@ In this part, we will be renaming some labels/names for clarity
 - `tidy_data` is created started with grouping the data in `extracted_data` by subject and activity denoted by `group_by(Subject, Activity)`, then, using the list of the means of each variable for each activity and each subject denoted by `list(mean)`, we summarize it by using the `summarise_all` function.
 
 8. To see the cleaner data after grouping and taking the average, we will export `tidy_data` into the `IndependentTidyData.txt` file located in the directory.
-
-Thank you! :)
