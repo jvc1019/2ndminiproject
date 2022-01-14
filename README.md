@@ -1,11 +1,10 @@
-# CMSC 197 (Introduction to Data Science)
-## SECOND MINI PROJECT
-### Submitted by: JAYVEE B. CASTAÑEDA
-### B.S. in Computer Science - IV, UPV
+# CMSC 197 (Introduction to Data Science) SECOND MINI PROJECT
+Submitted by: JAYVEE B. CASTAÑEDA
+B.S. in Computer Science - IV, UPV
 
-## Problem 1 README.md File
+### Problem 1 README.md File
 
-The R script is called `run_analysis.R` is created to perform the following tasks:
+The R script `run_analysis.R` is created to perform the following tasks:
 . Merge the training and the test sets to create one data set.
 . Extract only the measurements on the mean and standard deviation for each measurement
 . Use descriptive activity names to name the activities in the dataset
@@ -21,7 +20,7 @@ The data set is about Human Activity Recognition Using Smartphones which can be 
 
 1. Download the zipped file `UCI_HAR_Dataset.zip`. Unzip the file and extract it with the folder name `UCI HAR Dataset`. Make sure that the `run_analysis.R` script file is located in the same directory. The script installs the `dplyr` package in case you haven't yet.
 
-# Step-By-Step Procedure
+# Step-By-Step Data Transformation Procedure
 
 1. Assign each of the following data to corresponding variables
 - Features: `features <- features.txt`
@@ -80,3 +79,5 @@ In this part, we will be renaming some labels/names for clarity
 - `tidy_data` is created started with grouping the data in `extracted_data` by subject and activity denoted by `group_by(Subject, Activity)`, then, using the list of the means of each variable for each activity and each subject denoted by `list(mean)`, we summarize it by using the `summarise_all` function.
 
 8. To see the cleaner data after grouping and taking the average, we will export `tidy_data` into the `IndependentTidyData.txt` file located in the directory.
+
+Thank you and have a wonderful day!
